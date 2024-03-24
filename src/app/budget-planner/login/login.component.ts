@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from  '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
-import {MatIconModule} from '@angular/material/icon';
 
 
 @Component({
@@ -53,7 +52,7 @@ login(){
 
 register() {
   if(this.registerForm.valid) {
-    console.log("Register info==>", this.registerForm.value);
+    console.log("Register info ==>", this.registerForm.value);
     setTimeout(()=> {
       window.location.reload();
     },2000);

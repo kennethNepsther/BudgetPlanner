@@ -6,7 +6,8 @@ body{
 }
 
 .navbar{
-  background: linear-gradient(135deg, #008080, #80ced6);
+  //background: linear-gradient(135deg, #008080, #80ced6);
+  background:linear-gradient(-206deg, #FF6B00 55%, #80ced6 90%);
   padding: 10px 20px;
   display: flex;
   justify-content: center;
@@ -55,16 +56,17 @@ button{
   padding: 15px;
   border: none;
   border-radius: 6px;
-  background: linear-gradient(135deg, #008080, #80ced6);
+  //background: linear-gradient(135deg, #008080, #80ced6);
+  background:linear-gradient(-206deg, #FF6B00 55%, #80ced6 90%);
   color: #ffffff;
   cursor: pointer;
   transition:  background-color 0.3s ease;
-
 }
 
 button:hover{
-  background: #67bbc6;
+  background: #FF6B00;
 }
+
 p{
   text-align: center;
   cursor: pointer;
