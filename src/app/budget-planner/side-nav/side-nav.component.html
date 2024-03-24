@@ -1,0 +1,21 @@
+<div class="navbar">
+  <h2>
+    Nepsther TI
+  </h2>
+</div>
+
+<div>
+  <div class="toggle-button-row" (click)="toggleSlideOut()">
+    <mat-icon>Menu</mat-icon>
+  </div>
+</div>
+
+<div class="slide-out-panel" [class.slide-out]="isSlideOut">
+  <div class="slide-out-content">
+    <h3 class="nav">Budget Planner</h3>
+    <p class="edit-col" (click)="onDash()">Dashboard</p>
+    <p class="edit-col" (click)="onProfile()">Perfil</p>
+    <p class="edit-col" (click)="onHistory()">Histórico</p>
+    <p class="edit-col" (click)="onLogout()">Sair</p>
+  </div>
+</div>
