@@ -1,0 +1,75 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: calc(100% - 40px);
+  min-width: 1200px;
+}
+
+.card{
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(50% - 40px);
+  max-width: 400px;
+  transition: transform 0.3s ease-out;
+}
+
+.car:hover{
+  transform: translateY(-7px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header{
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+
+}
+
+.transaction-status{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #4caf50;
+}
+
+.transaction-details{
+  margin-left: 10px;
+  font-size: 16px;
+  color: #333;
+}
+.transaction-details.completed{
+  text-decoration: line-through;
+}
+
+.mat-icon{
+  font-size: 24px;
+  color:#fff;
+}
+
+.button{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: none;
+}
+

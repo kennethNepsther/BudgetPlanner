@@ -1,0 +1,75 @@
+<app-side-nav></app-side-nav>
+<div class="container">
+  <div class="card-container">
+    <!-- Income Card -->
+
+    <div class="card">
+      <div class="card-header">
+        <span class="icon income-icon"><mat-icon>attach_money</mat-icon></span>
+        <h2>Income</h2>
+      </div>
+      <hr />
+      <div class="income-details">
+        <div class="month">
+          <h3>Last Few Montths</h3>
+          <ul>
+            <li *ngFor="let monthIcome of lastMonthsIncome">
+              {{ monthIcome }}
+            </li>
+          </ul>
+        </div>
+        <div class="month">
+          <h3>Last Few Montths</h3>
+          <p>{{ currentMonthIncome }}</p>
+        </div>
+        <button class="button" (click)="onIncome()">Ver</button>
+      </div>
+    </div>
+    <!-- Expense Card -->
+
+    <div class="card">
+      <div class="card-header">
+        <span class="icon expense-icon"><mat-icon>attach_money</mat-icon></span>
+        <h2>Expense</h2>
+      </div>
+      <hr />
+      <div class="expense-details">
+        <div class="month">
+          <h3>Last Few Montths</h3>
+          <ul>
+            <li *ngFor="let monthExpense of lastMonthsExpense">
+              {{ monthExpense }}
+            </li>
+          </ul>
+        </div>
+        <div class="month">
+          <h3>Current Month</h3>
+          <p>{{ currentMonthExpense }}</p>
+        </div>
+        <button class="button" (click)="onExpense()">Ver</button>
+      </div>
+    </div>
+
+    <!-- To Do Transactions -->
+
+    <div class="card">
+      <div class="card-header">
+        <span class="icon todo-icon"><mat-icon>assignment</mat-icon></span>
+        <h2>To Do Transactions</h2>
+      </div>
+      <hr>
+      <ul>
+        <li *ngFor="let item of todoTransactions">
+          <span class="Transaction-status">
+            <mat-icon>hourglass_empty</mat-icon>
+          </span>
+          <span class="Transaction-details">{{ item.description }}</span>
+        </li>
+      </ul>
+
+      <button class="button" (click)="onTodo()">Ver</button>
+    </div>
+
+    <!--  Total-->
+  </div>
+</div>
